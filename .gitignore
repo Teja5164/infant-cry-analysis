@@ -1,5 +1,20 @@
+
+# virtual env
 infant/
-__pycache__/
-data/
-*.pt
+.venv/
+env/
+
+# data (never push datasets)
+data/audio/raw/
+data/images/raw/
+data/**/processed/
+
+# models
 *.pth
+
+# python cache
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
