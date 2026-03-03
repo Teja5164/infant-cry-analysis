@@ -92,12 +92,14 @@ infant-cry-analysis/
 
 ---
 
-## Deployment (Planned)
-- Cloud-based inference (AWS)
-- Modular architecture suitable for edge / mobile deployment
+## Deployment 
+- Cloud-based inference (Streamlit)
 - Inference latency target: ≤ 3 seconds
 
----
+The application was improved to provide a clear and user-friendly inference workflow. Users can now upload a .wav audio file directly through the web interface, after which the system automatically performs preprocessing (resampling, normalization, and Mel-spectrogram conversion) without requiring any manual configuration. The model then generates a predicted class label along with a confidence score, making the output easy to interpret.
+
+-The inference pipeline was structured to ensure stable model loading and consistent input formatting. Grad-CAM was incorporated during development to validate feature learning and improve model interpretability.
+-Overall, the system was refined to deliver a seamless end-to-end experience where users only need to upload an audio file to obtain results.
 
 ## Notes
 - The project is intentionally committed at a **stable checkpoint**
@@ -117,3 +119,4 @@ infant-cry-analysis/
 
 ## Author
 Teja Prakash
+
