@@ -9,8 +9,7 @@ data/audio/raw/
 data/images/raw/
 data/**/processed/
 
-# models
-*.pth
+
 
 # python cache
 __pycache__/
